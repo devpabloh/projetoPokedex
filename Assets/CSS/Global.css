@@ -15,8 +15,8 @@ ol.pokemons{
     margin: 0;
 }
 
-ol.pokemons li{
-    background-color: #14a06F;
+.pokemon{
+    background-color: #49D0B0;
     color: white;
     margin: .5rem;
     border-radius: 1rem;
@@ -25,7 +25,13 @@ ol.pokemons li{
     flex-direction: column;
 }
 
-ol.pokemons li img{
+.pokemon .number{
+    color:black ;
+    opacity: 0.5;
+    text-align: right;
+}
+
+.pokemon .datail img{
     height: 100px;
     max-width: 100%;
     align-self: flex-end;
