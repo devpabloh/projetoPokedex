@@ -17,7 +17,7 @@ ol.pokemons{
 
 .pokemon{
     background-color: #49D0B0;
-    color: white;
+    
     margin: .5rem;
     border-radius: 1rem;
     padding: 2rem 1rem;
@@ -29,6 +29,12 @@ ol.pokemons{
     color:black ;
     opacity: 0.5;
     text-align: right;
+    font-size: .625rem;
+}
+
+.pokemon .name{
+    color: white;
+    margin-bottom: 0;
 }
 
 .pokemon .detail{
