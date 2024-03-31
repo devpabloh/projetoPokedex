@@ -26,10 +26,15 @@ const pokemonList = document.getElementById(`pokemonList`)
         const newList = pokemons.map((pokemon) =>{
             return convertPokemonToLi(pokemon)
         })
-        console.log(newList)
-        const listItems = []
+        
+        const newHtml = newList.join()
 
-       /*  for(let i = 0; i < pokemons.length; i++){
+        pokemonList.innerHTML += newHtml
+       
+       
+     /*    const listItems = []
+
+        for(let i = 0; i < pokemons.length; i++){
             const pokemon = pokemons[i];
             listItems.push(convertPokemonToLi(pokemon))
         }   */
