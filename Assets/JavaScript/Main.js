@@ -27,7 +27,7 @@ const pokemonList = document.getElementById(`pokemonList`)
             return convertPokemonToLi(pokemon)
         })
         
-        const newHtml = newList.join()
+        const newHtml = newList.join(" ")
 
         pokemonList.innerHTML += newHtml
        
