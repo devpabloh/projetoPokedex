@@ -17,4 +17,4 @@ pokeApi.getPokemons = (offset = 0, limit = 10) => {
         debugger
         console.log(pokemonsDetails)
     })
-}
+} 
