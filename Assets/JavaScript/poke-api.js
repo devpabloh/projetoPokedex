@@ -11,9 +11,10 @@ function convertPokeApiDetailToPokemon(pokeDetail){
     pokemon.type = type
 
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
+    return pokemon
 }
 
-pokeApi.getpokemonDetail = (pokemon)=> {
+pokeApi.getPokemonDetail = (pokemon)=> {
     return fetch(pokemon.url)
         .then((response)=> response.json())
         .then(convertPokeApiDetailToPokemon)
@@ -25,7 +26,7 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
     return fetch(url)
     .then((response) => response.json())
     .then((jsonBody) => jsonBody.results)
-    .then((pokemons) => pokemons.map(pokeApi.getpokemonDetail))  
+    .then((pokemons) => pokemons.map(pokeApi.getPokemonDetail))  
     .then((detailRequests)=> Promise.all(detailRequests))
     .then((pokemonsDetails)=>pokemonsDetails)
 } 
