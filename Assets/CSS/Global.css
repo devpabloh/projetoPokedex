@@ -26,8 +26,6 @@ ol.pokemons{
 }
 
 .pokemon{
-    background-color: #49D0B0;
-    
     margin: .5rem;
     border-radius: 1rem;
     padding: 2rem 1rem;
@@ -45,6 +43,7 @@ ol.pokemons{
 .pokemon .name{     
     color: white;
     margin-bottom: 0.25rem;
+    text-transform: capitalize;
 }
 
 .pokemon .detail{
@@ -62,12 +61,13 @@ ol.pokemons{
 }
 
 .pokemon .detail .types .type{
-    background-color: #61e1ca;
     color: #fff;
     padding: .25rem .5rem;
     margin: .25rem 0;
     font-size: .625rem;
     border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
 }
 
 .pokemon .detail img{

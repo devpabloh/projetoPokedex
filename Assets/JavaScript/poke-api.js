@@ -11,6 +11,7 @@ function convertPokeApiDetailToPokemon(pokeDetail){
     pokemon.type = type
 
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
+
     return pokemon
 }
 
@@ -20,7 +21,7 @@ pokeApi.getPokemonDetail = (pokemon)=> {
         .then(convertPokeApiDetailToPokemon)
 }           
 
-pokeApi.getpokemons = (offset = 0, limit = 5) => {
+pokeApi.getPokemons = (offset = 0, limit = 5) => {
     const url = ` http://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 
     return fetch(url)
